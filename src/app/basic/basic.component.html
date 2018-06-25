@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" style="width: 600px; margin: auto">
+  <br><br><br>
+
+  Value: {{ myForm.value | json }}
+
+  <hr>
+
+  <mat-form-field>
+    <input matInput formControlName="email" placeholder="email...">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput formControlName="message" placeholder="message..."></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select matInput formControlName="greeting" placeholder="Choose">
+      <mat-option value="Hey">Hey</mat-option>
+      <mat-option value="Hi">Hi</mat-option>
+      <mat-option value="Hello">Hello</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
